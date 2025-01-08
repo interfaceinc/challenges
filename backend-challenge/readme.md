@@ -1,12 +1,12 @@
 # Backend Challenge
 
-_This challenge is part of the engineering hiring process at [Heart
-Hands](https://hearthands.tech/)._
+_This challenge is part of the engineering hiring process at
+[Interface](https://interface.inc)._
 
 ## Why this challenge?
 
-Heart Hands is operating with a small team of dedicated & talented people. We
-are looking for seasoned engineers with a deep technical knowledge, strong
+Interface is operating with a small team of dedicated & talented people. We are
+looking for seasoned engineers with a deep technical knowledge, strong
 understanding of their technical stack, and excellent product intuitions to join
 our team.
 
