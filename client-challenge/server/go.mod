@@ -1,4 +1,4 @@
-module github.com/hearthands/challenges/ios-engineer/server
+module github.com/interfaceinc/challenges/ios-engineer/server
 
 go 1.22.5
 
