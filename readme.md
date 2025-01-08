@@ -1,6 +1,6 @@
 # Challenges [![ci status](https://github.com/interfaceinc/challenges/actions/workflows/ci.yml/badge.svg)](https://github.com/interfaceinc/challenges/actions/workflows/ci.yml)
 
-This repository contains the [Interface, Inc](https://interface.inc) engineering challenges ([client](./client-challenge), [design](./design-challenge), and [backend](./backend-challenge)).
+This repository contains the [Interface](https://interface.inc) engineering challenges ([client](./client-challenge), [design](./design-challenge), and [backend](./backend-challenge)).
 
 ## Feedbacks
 
