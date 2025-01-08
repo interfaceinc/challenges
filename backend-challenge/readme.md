@@ -1,7 +1,7 @@
 # Backend Challenge
 
-_This challenge is part of the engineering hiring process at [Interface,
-Inc](https://interface.inc)._
+_This challenge is part of the engineering hiring process at
+[Interface](https://interface.inc)._
 
 ## Why this challenge?
 
