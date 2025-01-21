@@ -26,7 +26,7 @@ A companion server is available for you to use. You can read more about it in
 [`./server`](./server). Its documentation contains information on how it can be
 run, and what kinds of API endpoints & entities are available.
 
-You can choose a target platform of your choice for this challenge: iOS, macOS,
+You can choose a target platform of your choice for this challenge: one of iOS, macOS,
 or web.
 
 Functional requirements:
@@ -47,8 +47,6 @@ Some topics that we find interesting to dig:
 - [ ] Add support for optimistic sending to give instantaneity in the UI
 - [ ] Add support for a local read/unread indicator
 - [ ] Avoid to block changing states so the app feels fluid & snappy
-- [ ] Make the app available in multiple environments (e.g.: iOS/macOS,
-  web/electron)
 - [ ] _Anything_ that you feel could improve the UX!
 
 ## Design
