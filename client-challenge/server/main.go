@@ -14,6 +14,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/go-chi/cors"
 	"github.com/go-chi/render"
 	"github.com/google/uuid"
 	"github.com/r3labs/sse/v2"
@@ -45,9 +46,16 @@ func main() {
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 	r.Use(middleware.Timeout(30 * time.Second))
+  r.Use(cors.Handler(cors.Options{
+      AllowedOrigins:   []string{"https://*", "http://*"},
+      AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+      AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token", "Idempotency-Key"},
+      ExposedHeaders:   []string{"Link"},
+      AllowCredentials: false,
+      MaxAge:           300, // Maximum value not ignored by any of major browsers
+    }))
 
 	r.Handle("/events", http.HandlerFunc(events.ServeHTTP))
-
 	r.Group(func(r chi.Router) {
 		r.Use(render.SetContentType(render.ContentTypeJSON))
 		r.Use(chaosMiddleware)
@@ -279,4 +287,8 @@ func chaosMiddleware(next http.Handler) http.Handler {
 		// latency
 		<-time.After(time.Duration(rand.Intn(1500)) * time.Millisecond)
 	})
+}
+
+func enableCors(w *http.ResponseWriter) {
+  (*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
