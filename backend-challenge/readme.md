@@ -28,11 +28,9 @@ you make.
 
 Functional requirements:
 
-- [ ] Clients should be able to uniquely identify themselves with a phone number
-      (without authentication)
-- [ ] Clients should be able to send messages to other clients, identified by their
-      phone number
-- [ ] Clients should be able to list their chats
+- [ ] Clients should be able to uniquely identify themselves
+- [ ] Clients should be able to send messages to other clients
+- [ ] Clients should be able to list all their chats
 - [ ] Clients should be able to list all messages in a chat
 
 ## Bonus
