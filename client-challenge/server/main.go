@@ -49,9 +49,10 @@ func main() {
 	r.Use(cors.Handler(cors.Options{
 		AllowOriginFunc:  func(r *http.Request, origin string) bool { return true },
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
-		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token"},
+		AllowedHeaders:   []string{"Accept", "Authorization", "Content-Type", "X-CSRF-Token", "Idempotency-Key"},
+		ExposedHeaders:   []string{"Link"},
 		AllowCredentials: true,
-		MaxAge:           300,
+		MaxAge:           300, // Maximum value not ignored by any of major browsers
 	}))
 
 	r.Handle("/events", http.HandlerFunc(events.ServeHTTP))

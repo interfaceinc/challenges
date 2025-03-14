@@ -4,6 +4,7 @@ go 1.22.5
 
 require (
 	github.com/go-chi/chi/v5 v5.2.0
+	github.com/go-chi/cors v1.2.1
 	github.com/go-chi/render v1.0.3
 	github.com/google/uuid v1.6.0
 	github.com/r3labs/sse/v2 v2.10.0
