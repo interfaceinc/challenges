@@ -27,7 +27,7 @@ A companion server is available for you to use. You can read more about it in
 run, and what kinds of API endpoints & entities are available.
 
 You can choose a target platform of your choice for this challenge: one of iOS, macOS,
-or web.
+Android, or web.
 
 Functional requirements:
 
