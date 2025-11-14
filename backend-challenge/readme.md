@@ -5,7 +5,7 @@ _This challenge is part of the engineering hiring process at
 
 ## Why this challenge?
 
-Interface is operating with a small team of dedicated & talented people. We are
+Beside is operating with a small team of dedicated & talented people. We are
 looking for seasoned engineers with a deep technical knowledge, strong
 understanding of their technical stack, and excellent product intuitions to join
 our team.
